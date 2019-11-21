@@ -1,0 +1,365 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BasicsOfEntityFramework.Domain</name>
+    </assembly>
+    <members>
+        <member name="T:BasicsOfEntityFramework.Domain.Context.ShopContext">
+            <summary>
+            .
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Context.ShopContext.Customers">
+            <summary>
+            Gets or sets .
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Context.ShopContext.Sellers">
+            <summary>
+            Gets or sets .
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Context.ShopContext.Products">
+            <summary>
+            Gets or sets .
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Context.ShopContext.Comments">
+            <summary>
+            Gets or sets .
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Context.ShopContext.Carts">
+            <summary>
+            Gets or sets .
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Context.ShopContext.ProductCarts">
+            <summary>
+            Gets or sets .
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Context.ShopContext.Orders">
+            <summary>
+            Gets or sets .
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Context.ShopContext.ProductOrders">
+            <summary>
+            Gets or sets .
+            </summary>
+        </member>
+        <member name="M:BasicsOfEntityFramework.Domain.Context.ShopContext.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:BasicsOfEntityFramework.Domain.Context.ShopContext"/> class.
+            </summary>
+        </member>
+        <member name="M:BasicsOfEntityFramework.Domain.Context.ShopContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)">
+            <summary>
+            Connection settings.
+            </summary>
+            <param name="optionsBuilder">Sets the connection parameters.</param>
+        </member>
+        <member name="M:BasicsOfEntityFramework.Domain.Context.ShopContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            Used to initialize the context.
+            </summary>
+            <param name="modelBuilder">The builder that defines the model for the context being created.</param>
+        </member>
+        <member name="T:BasicsOfEntityFramework.Domain.Entities.Cart">
+            <summary>
+            CArt class.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Cart.Id">
+            <summary>
+            Gets or sets Id.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Cart.CustomerId">
+            <summary>
+            Gets or sets CustomerId.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Cart.Customer">
+            <summary>
+            Gets or sets Customer.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Cart.ProductCarts">
+            <summary>
+            Gets or sets ProductCarts.
+            </summary>
+        </member>
+        <member name="T:BasicsOfEntityFramework.Domain.Entities.Comment">
+            <summary>
+            Comment class.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Comment.Id">
+            <summary>
+            Gets or sets Id.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Comment.Text">
+            <summary>
+            Gets or sets Text.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Comment.CustomerId">
+            <summary>
+            Gets or sets CustomerId.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Comment.Customer">
+            <summary>
+            Gets or sets Customer.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Comment.ProductId">
+            <summary>
+            Gets or sets ProductId.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Comment.Product">
+            <summary>
+            Gets or sets Product.
+            </summary>
+        </member>
+        <member name="T:BasicsOfEntityFramework.Domain.Entities.Customer">
+            <summary>
+            Customer class.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Customer.Id">
+            <summary>
+            Gets or sets Id.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Customer.CustomerName">
+            <summary>
+            Gets or sets CustomerName.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Customer.Address">
+            <summary>
+            Gets or sets Address.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Customer.Phone">
+            <summary>
+            Gets or sets Phone.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Customer.Email">
+            <summary>
+            Gets or sets Email.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Customer.Cart">
+            <summary>
+            Gets or sets Cart.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Customer.Comments">
+            <summary>
+            Gets or sets Comments.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Customer.Orders">
+            <summary>
+            Gets or sets Orders.
+            </summary>
+        </member>
+        <member name="T:BasicsOfEntityFramework.Domain.Entities.Order">
+            <summary>
+            Order class.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Order.Id">
+            <summary>
+            Gets or sets Id.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Order.Number">
+            <summary>
+            Gets or sets Number.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Order.Date">
+            <summary>
+            Gets or sets Date.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Order.Status">
+            <summary>
+            Gets or sets Status.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Order.CustomerId">
+            <summary>
+            Gets or sets CustomerId.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Order.Customer">
+            <summary>
+            Gets or sets Customer.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Order.ProductOrders">
+            <summary>
+            Gets or sets ProductOrders.
+            </summary>
+        </member>
+        <member name="T:BasicsOfEntityFramework.Domain.Entities.Product">
+            <summary>
+            Product class.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Product.Id">
+            <summary>
+            Gets or sets Id.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Product.ProductName">
+            <summary>
+            Gets or sets ProductName.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Product.Description">
+            <summary>
+            Gets or sets Description.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Product.Price">
+            <summary>
+            Gets or sets Price.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Product.Quantity">
+            <summary>
+            Gets or sets Quantity.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Product.SellerId">
+            <summary>
+            Gets or sets SellerId.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Product.Seller">
+            <summary>
+            Gets or sets Seller.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Product.Comments">
+            <summary>
+            Gets or sets Comments.
+            </summary>
+        </member>
+        <member name="T:BasicsOfEntityFramework.Domain.Entities.ProductCart">
+            <summary>
+            ProductCart class.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.ProductCart.Id">
+            <summary>
+            Gets or sets Id.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.ProductCart.Quantity">
+            <summary>
+            Gets or sets Quantity.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.ProductCart.ProductId">
+            <summary>
+            Gets or sets ProductId.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.ProductCart.Product">
+            <summary>
+            Gets or sets Product.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.ProductCart.CartId">
+            <summary>
+            Gets or sets CartId.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.ProductCart.Cart">
+            <summary>
+            Gets or sets Cart.
+            </summary>
+        </member>
+        <member name="T:BasicsOfEntityFramework.Domain.Entities.ProductOrder">
+            <summary>
+            ProductOrder class.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.ProductOrder.Id">
+            <summary>
+            Gets or sets .
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.ProductOrder.Quantity">
+            <summary>
+            Gets or sets .
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.ProductOrder.ProductId">
+            <summary>
+            Gets or sets .
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.ProductOrder.Product">
+            <summary>
+            Gets or sets .
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.ProductOrder.OrderId">
+            <summary>
+            Gets or sets .
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.ProductOrder.Order">
+            <summary>
+            Gets or sets .
+            </summary>
+        </member>
+        <member name="T:BasicsOfEntityFramework.Domain.Entities.Seller">
+            <summary>
+            Seller class.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Seller.Id">
+            <summary>
+            Gets or sets Id.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Seller.SellerName">
+            <summary>
+            Gets or sets SellerName.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Seller.Address">
+            <summary>
+            Gets or sets Address.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Seller.Phone">
+            <summary>
+            Gets or sets Phone.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Seller.Email">
+            <summary>
+            Gets or sets Email.
+            </summary>
+        </member>
+        <member name="P:BasicsOfEntityFramework.Domain.Entities.Seller.Products">
+            <summary>
+            Gets or sets Products.
+            </summary>
+        </member>
+    </members>
+</doc>

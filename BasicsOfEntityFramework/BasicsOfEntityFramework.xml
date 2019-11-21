@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BasicsOfEntityFramework</name>
+    </assembly>
+    <members>
+        <member name="T:BasicsOfEntityFramework.Program">
+            <summary>
+            Program class.
+            </summary>
+        </member>
+        <member name="M:BasicsOfEntityFramework.Program.Main(System.String[])">
+            <summary>
+            Main method.
+            </summary>
+            <param name="args">Args.</param>
+        </member>
+    </members>
+</doc>
