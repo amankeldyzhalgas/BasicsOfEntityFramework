@@ -15,6 +15,10 @@
     <Compile Remove="Migrations\20191120100433_OneToOneCustomerCart.Designer.cs" />
     <Compile Remove="Migrations\20191120100556_OneToOneCustomerCartAndSeed.cs" />
     <Compile Remove="Migrations\20191120100556_OneToOneCustomerCartAndSeed.Designer.cs" />
+    <Compile Remove="Migrations\20191122110852_AddedInitialCommentData.cs" />
+    <Compile Remove="Migrations\20191122110852_AddedInitialCommentData.Designer.cs" />
+    <Compile Remove="Migrations\20191122111302_AddedInitialCommentData.cs" />
+    <Compile Remove="Migrations\20191122111302_AddedInitialCommentData.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

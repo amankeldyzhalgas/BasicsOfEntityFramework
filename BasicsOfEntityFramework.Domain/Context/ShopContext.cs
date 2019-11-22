@@ -85,13 +85,15 @@ namespace BasicsOfEntityFramework.Domain.Context
             modelBuilder.Entity<Seller>().HasData(
                 new Seller[]
                 {
-                    new Seller {Id = 1, SellerName = "Sam", Address = "Almaty", Email = "sam@gmail.com", Phone = "357951"},
+                    new Seller { Id = 1, SellerName = "Sam", Address = "Almaty", Email = "sam@gmail.com", Phone = "357951"},
                 });
 
             modelBuilder.Entity<Product>().HasData(
                 new Product[]
                 {
-                    new Product {Id = 1, ProductName = "Keyboard", Description = "HP Notebook Keyboard", Quantity = 5, Price = 6000, SellerId = 1 },
+                    new Product { Id = 1, ProductName = "Keyboard", Description = "HP Notebook Keyboard", Quantity = 5, Price = 6000, SellerId = 1 },
+                    new Product { Id = 2, ProductName = "Mouse", Description = "Mouse Delux", Quantity = 4, Price = 4000, SellerId = 1 },
+                    new Product { Id = 3, ProductName = "Monitor", Description = "Monitor Philips", Quantity = 2, Price = 20000, SellerId = 1 },
                 });
 
             modelBuilder.Entity<Cart>().HasData(
@@ -122,6 +124,15 @@ namespace BasicsOfEntityFramework.Domain.Context
                     new ProductOrder { Id = 2,  ProductId = 1, OrderId = 2, Quantity = 2 },
                 });
 
+            modelBuilder.Entity<Comment>().HasData(
+                new Comment[]
+                {
+                    new Comment { Id = 1, CustomerId = 1, ProductId = 1, Text = "4" },
+                    new Comment { Id = 2, CustomerId = 2, ProductId = 1, Text = "4" },
+                    new Comment { Id = 3, CustomerId = 2, ProductId = 2, Text = "5" },
+                    new Comment { Id = 4, CustomerId = 2, ProductId = 2, Text = "4+" },
+                    new Comment { Id = 5, CustomerId = 1, ProductId = 3, Text = "5" },
+                });
         }
     }
 }
